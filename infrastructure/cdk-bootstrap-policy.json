@@ -1,0 +1,38 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:*",
+                "s3:*",
+                "iam:*",
+                "sts:*",
+                "ssm:*",
+                "ec2:*",
+                "logs:*",
+                "events:*",
+                "lambda:*",
+                "apigateway:*",
+                "route53:*",
+                "acm:*",
+                "cloudfront:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudformation:CreateStack",
+                "cloudformation:UpdateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeStackResources",
+                "cloudformation:GetTemplate",
+                "cloudformation:ValidateTemplate"
+            ],
+            "Resource": "arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:stack/CDKToolkit/*"
+        }
+    ]
+} 

@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:*",
+                "s3:*",
+                "iam:*",
+                "cloudfront:*",
+                "route53:*",
+                "acm:*",
+                "lambda:*",
+                "apigateway:*",
+                "logs:*",
+                "events:*",
+                "ssm:*",
+                "ec2:Describe*",
+                "ec2:Get*",
+                "sts:GetCallerIdentity",
+                "sts:AssumeRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+} 
